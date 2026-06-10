@@ -1,0 +1,26 @@
+# Resumo Teórico: Arquitetura de Redes e Automação
+
+### 1. Modelos de Arquitetura e Nuvem (Cloud)
+As redes modernas deixaram de ser puramente locais e agora se integram com serviços de nuvem. Os principais modelos de serviço são:
+* **IaaS (Infraestrutura como Serviço):** Fornece servidores virtuais, armazenamento e rede. O usuário gerencia o sistema operacional e as aplicações (Ex: AWS EC2).
+* **PaaS (Plataforma como Serviço):** Fornece o ambiente de desenvolvimento pronto. O usuário se preocupa apenas com o código (Ex: Heroku).
+* **SaaS (Software como Serviço):** O aplicativo é entregue pronto via internet para o usuário final (Ex: Microsoft 365, Google Drive).
+
+### 2. Redes Definidas por Software (SDN)
+A arquitetura SDN separa as funções tradicionais dos roteadores e switches em três planos distintos:
+* **Plano de Aplicação:** Programas e serviços que definem políticas de rede.
+* **Plano de Controle:** O "cérebro" da rede. Em redes tradicionais, fica em cada roteador (OSPF, tabelas de rotas). Na SDN, é centralizado em um **Controlador** (como o Cisco DNA Center).
+* **Plano de Dados (Data Plane):** Responsável por apenas encaminhar os bits e pacotes com base nas ordens do Controlador.
+* **APIs Northbound:** Comunicação entre o Controlador e as Aplicações de gerenciamento.
+* **APIs Southbound:** Comunicação entre o Controlador e os equipamentos físicos (Ex: OpenFlow, NETCONF, RESTCONF).
+
+### 3. Formatos de Dados para Automação (APIs REST)
+Os controladores usam APIs REST (baseadas em HTTP) para automação. Os dados retornados usam formatos estruturados fáceis de ler por sistemas:
+* **JSON:** Formato leve baseado em chave-valor, muito utilizado em Python. Usa chaves `{ }` e colchetes `[ ]`.
+* **XML:** Usa tags semelhantes ao HTML para estruturar dados (Ex: `<interface><name>GigabitEthernet0/0</name></interface>`).
+* **YAML:** Formato minimalista focado na leitura humana, muito utilizado pelo Ansible. Baseado em espaçamentos (indentação).
+
+### 4. Ferramentas de Gerenciamento de Configuração
+* **Ansible:** Não precisa de agente instalado nos roteadores (Agentless). Usa conexões SSH e arquivos YAML chamados *Playbooks*.
+* **Puppet:** Baseado em arquitetura Mestre-Agente (exige instalação de software no cliente). Usa arquivos chamados *Manifests*.
+* **Chef:** Também baseado em Mestre-Agente. Usa receitas (*Recipes*) escritas em linguagem Ruby.
