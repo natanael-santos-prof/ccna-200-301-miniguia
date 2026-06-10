@@ -1,6 +1,3 @@
-# ccna-200-301-miniguia
-Miniguia de estudo sobre CCNA 200‑301 criado com NotebookLM para o Bootcamp Bradesco Dados e IA.
-
 # 🎓 Projeto Final: Aprendizado Acelerado com NotebookLM aplicado ao CCNA
 
 Este repositório é o projeto de conclusão do desafio proposto pelo programa **Boticário & Bradesco**. O objetivo principal é demonstrar como utilizar o **NotebookLM** de forma estratégica para acelerar o aprendizado técnico de infraestrutura de redes (Cisco CCNA 200-301) de maneira altamente eficaz.
