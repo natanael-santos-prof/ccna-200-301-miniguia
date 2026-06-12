@@ -1,6 +1,6 @@
 # 🎓 Projeto Final: Aprendizado Acelerado com NotebookLM aplicado ao CCNA
 
-Este repositório é o projeto de conclusão do desafio proposto pelo programa **Boticário & Bradesco**. O objetivo principal é demonstrar como utilizar o **NotebookLM** de forma estratégica para acelerar o aprendizado técnico de infraestrutura de redes (Cisco CCNA 200-301) de maneira altamente eficaz.
+Este repositório é o projeto de conclusão do desafio proposto pelo programa **Bootcamp & Bradesco**. O objetivo principal é demonstrar como utilizar o **NotebookLM** de forma estratégica para acelerar o aprendizado técnico de infraestrutura de redes (Cisco CCNA 200-301) de maneira altamente eficaz.
 
 ## 📝 Resumo da Metodologia Utilizada no Bootcamp
 
